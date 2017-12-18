@@ -1,0 +1,1090 @@
+@import url(reset.css);
+
+/*Главная страница с регистрации и авторизации*/
+
+#help_button {
+    position: fixed;
+    left: 0;
+    background: rgba(0, 170, 238, 0.3);
+    width: 28px;
+    height: 50px;
+    font: 40px Georgia;
+    color: #fff;
+    text-align: center;
+    border-radius: 0 5px 5px 0;
+	z-index: 998;
+}
+
+#s_panel {
+    position: fixed;
+    left: -300px;
+	top:0px;
+    background: rgba(0, 170, 238, 0.7);
+    width: 300px;
+    height: 150px;
+    padding: 30px 0 0 0;
+    border-radius: 0 5px 0 0;
+	z-index: 998;
+}
+
+.wrapper{
+	width:100%;	
+}
+
+#s_panel span{
+	font: 20px Georgia;
+    color: #fff;
+}
+
+#main{
+	margin: 0 auto;
+	width: 100%;
+	height: 900px;
+}
+
+#logo{
+	height: 136px;
+	width: 200px;
+	float: right;
+	margin:0 0 0 0;	
+}
+
+#header{
+	width:100%;
+	height:500px;
+	margin-top:0px;	
+}
+
+#Registration {
+	padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+	width: 300px;
+	background: rgba(0, 170, 238, 0);
+	position: relative;
+	float: left;
+}
+
+#Enter {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: white;	
+	margin-right:0px;	
+	width: 300px;
+	background: rgba(0, 170, 238, 0);
+	float: left;
+	position: relative;
+}
+
+#panel_registration,#panel_enter{
+	width:290px;
+	background:#4682B4;
+	padding: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: white;
+    border: solid 1px #4682B4;
+    border-radius: 3px;	
+}
+
+#content{
+	position: relative;
+    margin: 0% 0% 7% 0%;
+	
+}
+
+.CapText{
+	font: normal 54px/1 "Times New Roman", Times, serif;
+	color:white;
+	margin-left: 60%;
+}
+
+.MainText{
+	font: normal 18px/1 "Times New Roman", Times, serif;
+	color:white;
+}
+
+#cnt ul {
+	height: 40px;
+	overflow: hidden;
+}
+
+#cnt ul li {
+	height: 40px;
+	color:white;
+	font:normal 54px/1 "Times New Roman", Times, serif;
+}
+
+#ticker{
+	height: 40px;
+	overflow: hidden;
+}
+#ticker li{
+	height: 40px;
+	color:white;
+	font:normal 54px/1 "Times New Roman", Times, serif;
+}
+
+#flip_registration {
+	width: 140px;
+	height: 200px;
+    font-size: 18px;
+    text-align: center;
+    background: rgba(0, 170, 238, 0.3);
+    padding: 82px;
+    display: none;
+    margin-bottom:20px;
+	border-radius: 10px 10px 10px 10px; 
+}
+
+#flip_enter {
+	width: 140px;
+	height: 200px;
+    font-size: 18px;
+    text-align: center;
+    background: rgba(0, 170, 238, 0.3);
+    padding: 82px;
+    display: none;
+    margin-bottom:20px;
+	border-radius: 10px 10px 10px 10px; 
+}
+
+#flip_registration ul li,#flip_enter ul li{
+	margin-top:30px;
+}
+
+#button_close1,#button_close2{
+	background-color:#F0FFFF;
+	color:#FF0000;
+	width:100px;	
+}
+
+#regist_button,#enter_button{
+	background-color:#F0FFFF;
+	color:#197707;
+	width:100px;	
+}
+
+#popup {
+	width: 550px;
+	background: #fff;
+	padding: 30px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	border-radius: 3px;
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5), inset 0 0 60px rgba(0, 0, 0, 0.2);
+	color: #565656;
+	z-index: 1000;
+	display: none;
+}
+
+#popup h3 {
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#popup p {
+	margin: 6px 0;
+}
+
+#popup a {
+	color: #66c3e6;
+}
+
+#close_popup {
+	width: 14px;
+	height: 16px;
+	background: url(../images/close.png) no-repeat;
+	cursor: pointer;
+	position: absolute;
+	top: 15px;
+	right: 15px;
+}
+
+#overlay {
+    background: #000;
+    position: fixed;
+	top: 0;
+    left: 0;
+    height: 100%;
+	width: 100%;
+    opacity: 0.5;
+    z-index: 999;
+	display: none;
+}
+
+#footer{
+	float:middle;
+	padding-top: 90%;
+	margin-bottom:10px;
+}
+
+#footer ul{
+	padding-left:20px;
+	overflow:hidden;
+}
+
+#footer ul li{
+	float: left;
+	font: bold 18px Arial, Verdana;
+	color: #4682B4;
+	margin-right: 60px;
+	margin-top: 35px;
+}
+
+#footer ul li a{	
+	color: #4682B4;
+	text-decoration: none;
+}
+#footer ul li span{
+	color: #4682B4;
+}
+
+#footer.current, #footer ul li a:hover{
+	text-decoration: underline;
+}
+
+#footer.phone{
+	float:right;
+	margin-right:10px;
+}
+
+#cap{
+	height: 80px;
+	float:middle;
+}
+
+#cap ul{
+	padding-left:20px;
+	overflow:hidden;
+}
+
+#cap ul li{
+	float: left;
+	font: bold 18px Arial, Verdana;
+	color: #FF4500;
+	margin-right: 60px;
+	margin-top: 35px;
+}
+
+#cap ul li a{	
+	color: #FF4500;
+	text-decoration: none;
+}
+#cap ul li span{
+	color: #FF4500;
+}
+
+#cape.current, #footer ul li a:hover{
+	text-decoration: underline;
+}
+
+#name.phone{
+	float:right;
+	margin-right:10px;
+}
+
+/* Оформление для страницы с футболом*/
+
+#football_cap{
+	background: url(../images/football_cap.jpg) no-repeat;
+	height: 70px;
+	margin: 0% 0% 7% 0%;
+}
+
+#football_cap ul{
+	padding-left:20px;
+	overflow:hidden;
+}
+
+#football_cap ul li{
+	float: left;
+	font: bold 18px Arial, Verdana;
+	color: #FFFFFF;
+	margin-right: 60px;
+	margin-top: 35px;
+}
+
+#football_cap ul li a{	
+	color: #FFFFFF;
+	text-decoration: none;
+}
+#football_cap ul li span{
+	color: #FFFFFF;
+}
+
+#logo_football{
+	height: 100px;
+	width: 100px;
+	float: right;
+	margin:0 0 0 0;	
+}
+
+.football_block {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  position: relative;
+  cursor: pointer;
+  right: -28px;
+  left: 1px;
+  margin: 10px 60px 10px 60px;
+  padding: 20px 48px 20px 20px;
+  overflow: hidden;
+  border: none;
+  font: normal 16px/1 "Times New Roman", Times, serif;
+  color: rgba(255,255,255,1);
+  text-align: center;
+  background: #32CD32;
+  -webkit-box-shadow: 6px 5px 4px 0 rgba(0,0,0,0.3) ;
+  box-shadow: 6px 5px 4px 0 rgba(0,0,0,0.3) ;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
+}
+
+/* index_content*/
+
+#main_content{
+	margin-left: 20%;
+}
+.thumb{
+	position: relative;
+	margin-left: 60px;
+}
+
+
+.foot-block {
+	 -webkit-box-sizing: border-box;
+	 box-sizing: border-box;
+     display: block;
+     padding: 0 0 35px;
+     width: auto;
+     height: auto;
+	 font-size: 13px;
+     line-height: 1.2em;
+     background: #fff;
+	 margin: auto;
+	 color: #392839;
+}
+
+.foot-description {
+  background-color: #f0f0f0;
+  border-top: 2px solid #bebebe;
+  border-bottom: 1px solid #d6d6d6;
+  text-align: center;
+  color: #313131;
+  text-transform: uppercase;
+  font-family: 'Roboto Condensed', 'Segoe UI', Tahoma, Arial, sans-serif;
+  font-size: 1.3em;
+  line-height: 1.2em;
+  font-weight: 700;
+  position: relative;
+  padding: 8px 0px 8px 0;
+  cursor: pointer;
+}
+.foot-description:after,
+.foot-description:before {
+  content: "";
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  width: 16px;
+  height: 10px;
+  background: transparent url(/images/common/icons_bets.png?8) no-repeat 0px -138px;
+}
+.foot-description:before {
+  left: auto;
+  right: 10px;
+}
+.foot-description:hover {
+  background: #fff;
+}
+.foot-game {
+  position: relative;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #d6d6d6;
+  height: 52px;
+  background-color: #f0f0f0;
+  -moz-transition: background-color 0.25s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -o-transition: background-color 0.25s ease-in-out;
+  -ms-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+.foot-game:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.foot-game:before {
+  content: "";
+  display: block;
+  width: 210px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -105px;
+  background-color: #4b4b4b;
+  z-index: 1;
+  -moz-transition: background-color 0.25s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -o-transition: background-color 0.25s ease-in-out;
+  -ms-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+.foot-game:hover {
+  background: #fff !important;
+}
+.foot-game:hover .foot-team1 .foot-betmoney {
+  padding-left: 6px;
+}
+.foot-game:hover .foot-team2 .foot-betmoney {
+  padding-right: 6px;
+}
+.foot-game:hover .foot-betmoney {
+  padding-top: 0;
+}
+.foot-game:hover .foot-betextrainfo {
+  color: #222;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+}
+.nologin-matchlist .foot-betextrainfo {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  font-family: 'Roboto Condensed', 'Segoe UI', Tahoma, Arial, sans-serif;
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-weight: 700;
+  color: #222;
+  padding-top: 1px;
+  margin-top: -1px;
+  text-align: center;
+}
+.nologin-matchlist .foot-betextrainfo:after {
+  display: none;
+}
+.nologin-matchlist .foot-betmoney {
+  display: none;
+}
+.nologin-matchlist .stat-koef {
+  display: none;
+}
+.nologin-matchlist .foot-team1 .foot-koef {
+  padding-right: 4px;
+}
+.nologin-matchlist .foot-team1 .foot-koef:hover .foot-betextrainfo {
+  padding-right: 0px;
+}
+.nologin-matchlist .foot-team2 .foot-koef {
+  padding-left: 4px;
+}
+.nologin-matchlist .foot-team2 .foot-koef:hover .foot-betextrainfo {
+  padding-left: 0px;
+}
+.nologin-matchlist .foot-additional .foot-koef-summ {
+  display: none;
+}
+.nologin-matchlist .foot-additional .foot-koef-proc {
+  display: block;
+}
+}
+.foot-timerange {
+  padding: 0 0 35px;
+}
+.foot-timerange#foot-next .foot-game:before {
+  background-color: #4b4b4b;
+}
+.foot-timerange#foot-live .foot-game:before {
+  background-color: #3b4032;
+}
+.foot-timerange#foot-live .foot-description {
+  background: #e6fdc2;
+  background: -moz-linear-gradient(left, #e6fdc2 0%, #f0f0f0 50%, #f0f0f0 50%, #e6fdc2 100%);
+  background: -webkit-linear-gradient(left, #e6fdc2 0%, #f0f0f0 50%, #f0f0f0 50%, #e6fdc2 100%);
+  background: linear-gradient(to right, #e6fdc2 0%, #f0f0f0 50%, #f0f0f0 50%, #e6fdc2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e6fdc2', endColorstr='#e6fdc2', GradientType=1);
+  border-top-color: #86b800;
+  color: #4f7c00;
+}
+.foot-timerange#foot-live .foot-description:hover {
+  background: #fff;
+}
+.foot-timerange#foot-live .foot-remove {
+  display: none;
+}
+.foot-timerange#foot-live .foot-game-block .foot-game .foot-team1 .foot-koef,
+.foot-timerange#foot-live .foot-game-block .foot-game .foot-team1 .foot-koef:hover {
+  background-position: 0px 0px;
+  cursor: default;
+}
+.foot-timerange#foot-live .foot-game-block .foot-game .foot-team2 .foot-koef,
+.foot-timerange#foot-live .foot-game-block .foot-game .foot-team2 .foot-koef:hover {
+  background-position: 0px -52px;
+  cursor: default;
+}
+.foot-timerange#foot-live .foot-game-block .foot-game .foot-betproc,
+.foot-timerange#foot-live .foot-game-block .foot-game .foot-betcoef {
+  background-color: #d0d0d0;
+}
+.foot-timerange#foot-live .foot-game-block.userfoot-team1 .foot-game .foot-team1 .foot-koef,
+.foot-timerange#foot-live .foot-game-block.userfoot-team1 .foot-game .foot-team1 .foot-koef:hover {
+  background-position: -240px 0px;
+  cursor: default;
+}
+.foot-timerange#foot-live .foot-game-block.userfoot-team1 .foot-game .foot-team1 .foot-betextrainfo {
+  color: #222;
+}
+.foot-timerange#foot-live .foot-game-block.userfoot-team1 .foot-game .foot-team1 .foot-betproc,
+.foot-timerange#foot-live .foot-game-block.userfoot-team1 .foot-game .foot-team1 .foot-betcoef {
+  background-color: #a1da04;
+}
+.foot-timerange#foot-live .foot-game-block.userfoot-team2 .foot-game .foot-team2 .foot-koef,
+.foot-timerange#foot-live .foot-game-block.userfoot-team2 .foot-game .foot-team2 .foot-koef:hover {
+  background-position: -240px -52px;
+  cursor: default;
+}
+.foot-timerange#foot-live .foot-game-block.userfoot-team2 .foot-game .foot-team2 .foot-betextrainfo {
+  color: #222;
+}
+.foot-timerange#foot-live .foot-game-block.userfoot-team2 .foot-game .foot-team2 .foot-betproc,
+.foot-timerange#foot-live .foot-game-block.userfoot-team2 .foot-game .foot-team2 .foot-betcoef {
+  background-color: #a1da04;
+}
+.foot-timerange#foot-live .foot-game-block.foot-additional .foot-team1 .foot-koef,
+.foot-timerange#foot-live .foot-game-block.foot-additional .foot-team1 .foot-koef:hover {
+  background-position: 0px -600px;
+  cursor: default;
+}
+.foot-timerange#foot-live .foot-game-block.foot-additional .foot-team2 .foot-koef,
+.foot-timerange#foot-live .foot-game-block.foot-additional .foot-team2 .foot-koef:hover {
+  background-position: 0px -652px;
+  cursor: default;
+}
+.foot-timerange#foot-live .foot-game-block.foot-additional.userfoot-team1 .foot-team1 .foot-koef,
+.foot-timerange#foot-live .foot-game-block.foot-additional.userfoot-team1 .foot-team1 .foot-koef:hover {
+  background-position: -240px -600px;
+  cursor: default;
+}
+.foot-timerange#foot-live .foot-game-block.foot-additional.userfoot-team2 .foot-team2 .foot-koef,
+.foot-timerange#foot-live .foot-game-block.foot-additional.userfoot-team2 .foot-team2 .foot-koef:hover {
+  background-position: -240px -652px;
+  cursor: default;
+}
+.foot-timerange#foot-live .foot-time-left {
+  display: none;
+}
+.foot-timerange#foot-past .foot-remove {
+  display: none;
+}
+.foot-timerange#foot-past .foot-tv {
+  display: none;
+}
+.foot-timerange#foot-past .foot-bo {
+  display: none;
+}
+.foot-timerange#foot-past .foot-time-left {
+  display: none;
+}
+.foot-timerange#foot-past .foot-info b:after {
+  display: none;
+}
+.foot-timerange.active .foot-description:after,
+.foot-timerange.active .foot-description:before {
+  background-position: 0px -150px;
+}
+#foot-next .userfoot-team1 .foot-game .foot-team1 .foot-koef:hover {
+  background-position: -720px 0px;
+  cursor: pointer;
+}
+#foot-next .userfoot-team1 .foot-game .foot-team1 .foot-betextrainfo {
+  color: #222;
+}
+#foot-next .userfoot-team1 .foot-game .foot-team1 .foot-betproc,
+#foot-next .userfoot-team1 .foot-game .foot-team1 .foot-betcoef {
+  background-color: #a1da04;
+}
+#foot-next .userfoot-team1 .foot-game .foot-team2 .foot-koef:hover {
+  cursor: default;
+}
+#foot-next .userfoot-team1 .foot-game .foot-team2 .foot-betproc,
+#foot-next .userfoot-team1 .foot-game .foot-team2 .foot-betcoef {
+  background-color: #d0d0d0;
+}
+#foot-next .userfoot-team1.foot-additional .foot-team1 .foot-koef:hover {
+  background-position: -720px -600px;
+  cursor: pointer;
+}
+#foot-next .userfoot-team1.foot-additional .foot-team2 .foot-koef:hover {
+  cursor: default;
+}
+#foot-next .userfoot-team2 .foot-game .foot-team1 .foot-koef:hover {
+  cursor: default;
+}
+#foot-next .userfoot-team2 .foot-game .foot-team1 .foot-betproc,
+#foot-next .userfoot-team2 .foot-game .foot-team1 .foot-betcoef {
+  background-color: #d0d0d0;
+}
+#foot-next .userfoot-team2 .foot-game .foot-team2 .foot-koef:hover {
+  background-position: -720px -52px;
+  cursor: pointer;
+}
+#foot-next .userfoot-team2 .foot-game .foot-team2 .foot-betextrainfo {
+  color: #222;
+}
+#foot-next .userfoot-team2 .foot-game .foot-team2 .foot-betproc,
+#foot-next .userfoot-team2 .foot-game .foot-team2 .foot-betcoef {
+  background-color: #a1da04;
+}
+#foot-next .userfoot-team2.foot-additional .foot-team1 .foot-koef:hover {
+  cursor: default;
+}
+#foot-next .userfoot-team2.foot-additional .foot-team2 .foot-koef:hover {
+  background-position: -720px -652px;
+  cursor: pointer;
+}
+}
+.havescore.winner-team1 .foot-game .foot-tourney,
+.havescore.winner-team2 .foot-game .foot-tourney {
+  padding-top: 11px;
+}
+.havescore.winner-team1 .foot-game .foot-tourney foot,
+.havescore.winner-team2 .foot-game .foot-tourney foot {
+  font-size: 1.5em;
+  font-weight: 700;
+  line-height: 1em;
+}
+.havescore.winner-team1.foot-with-additional .foot-game .foot-tourney,
+.havescore.winner-team2.foot-with-additional .foot-game .foot-tourney {
+  padding-top: 6px;
+}
+.havescore.winner-team1.foot-with-additional .foot-game .bet-additional-opener,
+.havescore.winner-team2.foot-with-additional .foot-game .bet-additional-opener {
+  padding-top: 0;
+}
+.foot-additionals {
+  display: none;
+}
+.foot-additional {
+  position: relative;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #d6d6d6;
+  height: 38px;
+  background-color: #fff;
+  -moz-transition: background-color 0.25s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -o-transition: background-color 0.25s ease-in-out;
+  -ms-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+.foot-additional:after {
+  content: "";
+  clear: both;
+  display: block;
+}
+.foot-additional:before {
+  content: "";
+  display: block;
+  width: 320px;
+  height: 36px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -160px;
+  background-color: #585858;
+  z-index: 1;
+  -moz-transition: background-color 0.25s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out;
+  -o-transition: background-color 0.25s ease-in-out;
+  -ms-transition: background-color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out;
+}
+.foot-additional:hover .foot-tourney b {
+  color: #fff;
+}
+.foot-additional .foot-team1,
+.foot-additional .foot-team2 {
+  float: left;
+  text-align: right;
+  position: relative;
+  width: 50%;
+  height: 36px;
+  padding: 0 140px 0 0;
+  z-index: 2;
+}
+.foot-additional .foot-team1 .foot-userbet {
+  left: 90px;
+}
+.foot-additional .foot-team2 {
+  padding: 0 0 0 140px;
+  text-align: left;
+}
+.foot-additional .foot-team2 .foot-userbet {
+  right: 65px;
+}
+.foot-additional .foot-koef {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  margin: 0;
+  border: 0 none;
+  width: 118px;
+  height: 36px;
+  background: transparent url(/images/common/icons_bets.png?8) no-repeat -120px -600px;
+  padding: 1px 13px 0px !important;
+  text-align: center;
+  color: #2a2a2a;
+  font-family: 'Roboto Condensed', 'Segoe UI', Tahoma, Arial, sans-serif;
+  font-size: 1.2em;
+  font-weight: 700;
+  line-height: 36px;
+  outline: none;
+  z-index: 2;
+  cursor: pointer;
+}
+.foot-additional .foot-koef small:before {
+  content: "p";
+}
+.foot-additional .foot-koef:hover {
+  background-position: -480px -600px;
+}
+.foot-additional .foot-score {
+  top: 0;
+  right: 129px;
+}
+.foot-additional .foot-tourney {
+  width: 280px;
+  margin-left: -140px;
+}
+.foot-additional .foot-tourney b {
+  color: #f0f0f0;
+  font-size: 1.1em;
+  line-height: 1.2em;
+  overflow: hidden;
+  white-space: nowrap;
+  font-weight: 400;
+  cursor: default;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+}
+.foot-additional .foot-userbet {
+  display: none;
+  position: absolute;
+  top: 6px;
+  padding: 4px 7px 4px;
+}
+.foot-additional .foot-userbet b {
+  display: inline;
+}
+.foot-additional .foot-userbet span {
+  display: inline;
+}
+.foot-additional .foot-team1 .foot-teamname {
+  margin-right: -3px;
+  font-size: 1.2em;
+  line-height: 38px;
+}
+.foot-additional .foot-team2 .foot-koef {
+  background-position: -120px -652px;
+}
+.foot-additional .foot-team2 .foot-koef:hover {
+  background-position: -480px -652px;
+}
+.foot-additional .foot-team2 .foot-score {
+  right: auto;
+  left: 129px;
+  background-position: -80px -104px;
+}
+.foot-additional .foot-team2 .foot-teamname {
+  margin-left: -3px;
+  font-size: 1.2em;
+  line-height: 38px;
+}
+.foot-graph-block {
+  display: none;
+  background: #fff;
+  text-align: center;
+}
+div#right-block {
+/*
+    visibility: hidden;
+    position: absolute;
+    right: -310px;
+    width: 300px;
+    top: 0px;
+    */
+    font-family: Verdana, Geneva, sans-serif;
+    overflow: hidden;
+    float:right;
+}
+#right-block>.block {
+    float: left;
+    width: 240px;
+    line-height: 30px;
+}
+
+.block>.title {
+    height: 30px;
+    width: 100%;
+    cursor: pointer;
+    padding: 0px 10px;
+    background: gray;
+    color: white;
+    float: left;
+}
+.block>.body {
+    background: white;
+    float: left;
+    width: 100%;
+}
+#right-block * {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+#match-block .match div {
+    float: left;
+}
+#match-block .match .team {
+    width: 25%;
+    margin-top: 5px;
+}
+#match-block .match .info {
+    width: 50%;
+    text-align: center;
+    border: 1px solid rgb(235, 235, 235);
+    border-top: none;
+    border-bottom: none;
+    line-height: 20px;
+    height: 60px;
+    font-size: 11px;
+}
+.match .row {
+    width: 100%;
+}
+#match-block .match .team .logo {
+    width: 30px;
+    height: 30px;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#match-block .match .name {
+    text-align: center;
+    line-height: 25px;
+    font-size: 11px;
+    overflow: hidden;
+}
+#match-block .match .row {
+    text-align: center;
+}
+#match-block .match .row.league {
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+#match-block .match div..left {
+    float: left;
+}
+#match-block .match div.right {
+    float: right;
+}
+
+#match-block .match .koef {
+    text-align: center;
+    padding: 0px 2px;
+    overflow: hidden;
+    font-weight: bold;
+    font-size: 10px;
+}
+#match-block .match {
+    padding: 0px 5px;
+    cursor: pointer;
+    width: 100%;
+    height : 60px;
+    transition: 0.3s linear 0s;
+}
+
+#right-block #match-block {
+    overflow: hidden;
+}
+#match-block .match+.match {
+    border-top: 1px solid rgb(231, 231, 231);
+}
+#match-block .match:hover {
+    background: rgb(255, 249, 237);
+}
+.block>.title:hover {
+    opacity: 0.8;
+}
+
+#right-block #news-table .column {
+    width: 100%;
+}
+#right-block #news-table{
+    margin-top: 10px;
+    float: left;
+}
+#news-table>.head {
+    height: 30px;
+    line-height: 30px;
+    background: #31100B;
+    color: white;
+    font-size: 13px;
+    text-align: left;
+    padding-left: 10px;
+    overflow: hidden;
+    font-size: 13px;
+    cursor: pointer;
+}
+#right-block #news-table .column .news{
+    padding-right: 5px;
+    padding-left : 5px;
+    background: white;
+    width: 240px;
+}
+#right-block #news-table>.head:hover {
+    opacity: 0.9;
+}
+#right-block #news-table {
+    clear:both;
+    width: 240px;
+}
+#news-table {
+    margin-top: 10px;
+}
+#news-table .news .picture {
+    width: 100%;
+    background-repeat: no-repeat;
+    height: 140px;
+    float: left;
+    margin-bottom: 10px;
+    background-size: 100% auto;
+    background-position: 50% 50%;
+}
+#news-table .news .title {
+    float: left;
+    width: 100%;
+    font-weight: bold;
+    font-size: 1em;
+    cursor: pointer;
+}
+#news-table .news .text {
+    float: left;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+#news-table .news .info {
+    width: 100%;
+    float: left;
+    position: relative;
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: gray;
+}
+#news-table .news {
+    padding-top: 15px;
+    position: relative;
+    display: inline-block;
+    font-size: 12px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgb(175, 175, 175);
+}
+#news-table .news .info .time {
+    float: left;
+}
+#news-table .news .info .comments {
+    float: right;
+}
+#news-table .news .title:hover {
+    opacity: 0.8;
+}
+#news-table .column {
+    float: left;
+    margin-right: 3%;
+    /*width: 30%;*/
+}
+
+
+
+
+
+
+
+
+#content-container #match-block>.body{
+    border: 1px solid rgb(233, 233, 233);
+border-top: none;
+}
+
+
+
+
+
+
+
+/* shitty specific for right block classes*/
+#right-block #match-block .match .name {
+    display: block;
+    position: absolute;
+    left: 100%;
+    width: 50%;
+    height: 50%;
+    top: 50%;
+    transition: 0.3s linear 0s;
+    background: white;
+    z-index: 10;
+    line-height: 20px;
+}
+#right-block #match-block .match .team {
+    width: 30%;
+}
+#right-block #match-block .match .info {
+    width: 40%;
+}
+#right-block #match-block .match{
+    width:240px;
+    position: relative;
+}
+
+#right-block #match-block .match .row.league {
+    display: block;
+    position: absolute;
+    right: -100%;
+    width: 100%;
+    margin: 0px;
+    height: 100%;
+    /* opacity: 0; */
+    background: white;
+    transition: 0.3s linear 0s;
+}
+
+#right-block #match-block .match{
+    height : 40px;
+}
+
+#right-block #match-block .match .row.date {
+    line-height: 15px;
+    margin-top: 5px;
+}
+#right-block #match-block .match .info{
+    height : 40px;
+}
+
+
+#right-block .news .info>div {
+    font-size: 10px;
+}
+
+#right-block #match-block .match:hover .row.league {
+    right: 0%;
+}
+#right-block #match-block .match:hover .name {
+    left: 0%;
+}
+#right-block #match-block .match:hover .info+.team>.name {
+    left: 50%;
+}

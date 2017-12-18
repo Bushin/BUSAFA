@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Super Web</title>
+	<meta name="description" content="Free Responsive Html5 Css3 Templates | Zerotheme.com">
+	<meta name="author" content="www.zerotheme.com">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  	<link rel="stylesheet" href="css/zerogrid.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/responsiveslides.css">
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="owl-carousel/owl.carousel.css" rel="stylesheet">	
+	<link rel="stylesheet" href="css/menu.css">
+	<script src="js/jquery183.min.js"></script>
+	<script src="js/script.js"></script>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>	
+	<script src="js/jquery-latest.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+	<script type="text/javascript" src="js/news.js"></script>
+	<script type="text/javascript" src="js/effects.js"></script>
+	<script type="text/javascript" src="js/button1.js"></script>
+	<script type="text/javascript" src="js/button2.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+    <script>
+		$(function () {
+		  $("#slider").responsiveSlides({
+			auto: true,
+			pager: false,
+			nav: true,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+			  $('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+			  $('.events').append("<li>after event fired.</li>");
+			}
+		  });
+		});
+	</script>
+	
+</head>
+
+<body class="home-page">
+
+	<div id="popup">
+		<h3>Бушин Александр Сергеевич</h3>
+		<p> Группа: "М17-703"</p>
+		<p>Контактная информация <a href="http://vk.com/id114082267" target="_blank">ВКонтакте</a> </p>
+		<p align="justify">
+            <img src="images/Bushin.jpg" align="left" hspace="10" width="100" height="120">    
+        </p>
+		<div id="close_popup"></div>
+	</div>	
+	
+	<div class="wrap-body">
+		<header>
+			<div class="top-bar">
+				<div class="wrap-top zerogrid">
+					<div class="row">
+						<div class="col-2-3">
+							<ul class="list-inline">
+								<li class="mail"><span><i class="fa fa-envelope"></i> Bushin-sasha@mail.ru</span></li>
+								<li class="phone"><span><i class="fa fa-phone"></i>8-800-555-35-35</span></li>
+								<li class="clock"><span><i class="fa fa-clock-o"></i>Mon - Sat | 7:00 - 19:00</span></li>
+							</ul>
+						</div>
+						<div class="col-1-3">
+							<ul class="list-inline top-social">
+								<li><a href="https://vk.com/id114082267"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://vk.com/id114082267"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://vk.com/id114082267"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://vk.com/id114082267"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="header-logo">
+				<a href="index.html"><img src="images/header.jpg" width="2000"></a>
+			</div>
+			<div id='cssmenu' >
+				<ul>
+				   <li class="active"><a href='index.html'><span>Main Menu</span></a></li>
+				   <li class=' has-sub'><a href='#'><span>Category</span></a>
+					  <ul>
+						 <li class='has-sub'><a href='#'><span>Item 1</span></a>
+							<ul>
+							   <li><a href='#'><span>Sub Item</span></a></li>
+							   <li class='last'><a href='#'><span>Sub Item</span></a></li>
+							</ul>
+						 </li>
+						 <li class='has-sub'><a href='#'><span>Item 2</span></a>
+							<ul>
+							   <li><a href='#'><span>Sub Item</span></a></li>
+							   <li class='last'><a href='#'><span>Sub Item</span></a></li>
+							</ul>
+						 </li>
+					  </ul>
+				   </li>
+				   <li><a href='#'><span>Archive</span></a></li>
+				   <li><a id="show_popup" value="Показать всплывающее окно" href="#">About</a></li>
+				   <li class='last'><a href='#'><span>Contact</span></a></li>   
+				   <div id="Registration">
+						<input type="Panel" id="panel_registration" value="Регистрация" />
+						<div id="flip_registration">
+							<form method="post" action="reg.php">
+								<input type="text" name="new_username" placeholder=" |Username" required/></br>
+								<input type="text" name="new_login" placeholder=" |login" required/></br>
+								<input type="password" name="new_password" placeholder=" |password" required/></br>
+								<input type="password" name="r_new_password" placeholder=" |repeat password" required/></br>
+								<input type="submit" name="regist" id="regist_button" value="Register"/></br>
+								<input type="Button" id="button_close1" value="Close" />
+							</form>
+						</div>			
+					</div>
+					<div id="Enter">
+						<input type="Panel" id="panel_enter" value="Вход" />
+						<div id="flip_enter">
+							<form method="post" action="reg.php">
+								<input type="text" name="login" placeholder=" |login" required/></br>
+								<input type="password" name="password" placeholder=" |password" required/></br>
+								<input type="submit" name="enter" id="enter_button" value="Enter"/></br>
+								<input type="Button" id="button_close2" value="Close" />
+							</form>
+					</div>		   
+				</ul>
+			</div>
+			<div class="slider">
+				<div class="callbacks_container">
+					<ul class="rslides" id="slider">
+						<li>
+							<img src="images/news1.jpg" alt="">
+							<div class="caption">
+								<h1>"Лас-Пальмас" сыграл вничью с "Эспаньолом" в матче чемпионата Испании</h1>
+								<span>Встреча, прошедшая в воскресенье в городе Лас-Пальмас-де-Гран-Канария, завершилась со счетом 2:2.<br> В составе гостей дубль сделал Жерар Морено (19-я и 41-я минуты).  <br>а 95-й минуте игрок "Лас-Пальмаса" Хонатан Виера не забил пенальти.</span>
+							</div>
+						</li>
+						<li>
+							<img src="images/news2.jpg" alt="">
+							<div class="caption">
+								<h1>МОК запретил российским олимпийцам использовать национальную символику</h1>
+								<span> Согласно требованиям Международного олимпийского комитета (МОК) относительно экипировки сборной России на Олимпийских играх 2018 года, <br>  не допускается использование символики для национальной идентификации, говорится в документе.</span>
+							</div>
+						</li>
+						<li>
+							<img src="images/news3.jpg" alt="">
+							<div class="caption">
+								<h1>Марадона пошутил над самоуверенностью Роналду</h1>
+								<span > Чемпион мира по футболу в составе сборной Аргентины Диего Марадона пошутил над словами португальского нападающего мадридского "Реала",<br>  Криштиану Роналду, назвавшего себя лучшим футболистом в истории.</span>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="clear"></div>
+			</div>
+		</header>
+		<section id="container">
+			<div class="wrap-container">
+				<section class="content-box box-1">
+					<div class="zerogrid">
+						<div class="row wrap-box">
+							<div class="col-1-3">
+								<div class="wrap-col">
+									<div class="box-item">
+										<img src="images/1.jpg">
+										<h2>Как правильно ставить</h2>
+										<p>В этой статье вы сможете узнать как правильно делать ставки и не получить зависимость на всю жизнь</p>
+										<a href="http://psihiatrov.net/article/igromanija">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-1-3">
+								<div class="wrap-col">
+									<div class="box-item">
+										<img src="images/2.jpg">
+										<h2>Советы професионалов</h2>
+										<p>Советы от бывалых игроков, которые подскажут в какой момент лучше остановиться, а где наоборот поднажать</p>
+										<a href="http://psihiatrov.net/article/igromanija">Read More</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-1-3">
+								<div class="wrap-col">
+									<div class="box-item">
+										<img src="images/3.jpg">
+										<h2>Статистика всех матчей</h2>
+										<p>Обзорная статистика всех матчей, позволяющая отследить успех каждой команды и выстроить стратегию успешных ставок</p>
+										<a href="http://psihiatrov.net/article/igromanija">Read More</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="content-box boxstyle-1 box-2">
+					<div class="zerogrid">
+						<div class="row wrap-box">
+							<div class="box-item">
+								<blockquote><p>Без дисциплины не имеет значения, насколько ты хорош. Без дисциплины ты ничто. Когда-нибудь ты встретишь крутого парня, который выдержит все твои лучшие удары и будет продолжать наступать. Помни об этом и не теряй силу духа и мужества. Это время, когда дисциплина вступает в игру. -- ©Майк Тайсон</p></blockquote>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="content-box boxstyle-2 box-4">
+					<div class="zerogrid">
+						<div class="row wrap-box">
+							<div class="header">
+								<div class="wrapper">
+								<h2>Отзывы наших клиентов</h2>
+								<hr class="line">
+									<div class="intro">Изучите их все</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-1-3">
+									<div class="wrap-col">
+										<div class="box-item">
+											<div class="zoom-container">
+												<img src="images/Alex.jpg" />
+											</div>
+											<div class="box-item-content">
+												<h4>Бунин Алексей</h4>
+												<p>В дестве я мечтал стать бронтазавром, но благодяря этому сайту стал успешным и богатым студентом...</p>
+												<a href="single.html">Read More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-1-3">
+									<div class="wrap-col">
+										<div class="box-item">
+											<div class="zoom-container">
+												<img src="images/Topaz.jpg" />
+											</div>
+											<div class="box-item-content">
+												<h4>Сахатов Тапаз</h4>
+												<p>В 16 лет врачи поставили мне страшный диагноз, ОРВИ. И только этот сайт помог мне прежить недуг...</p>
+												<a href="single.html">Read More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-1-3">
+									<div class="wrap-col">
+										<div class="box-item">
+											<div class="zoom-container">
+												<img src="images/Ocetr.jpg" />
+											</div>
+											<div class="box-item-content">
+												<h4>Фракталин Осетр</h4>
+												<p>Я был обычным парнем из Грозного, без гроша в кармане, и друг рассказал мне про этот сайт...</p>
+												<a href="single.html">Read More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>					
+		<footer>
+			<div class="top-footer">
+				<div id="owl-brand" class="owl-carousel">
+					<div class="item">
+						<a href="#.html"><img src="images/b.jpg" /></a>
+					</div>
+					<div class="item">
+						<a href="#.html"><img src="images/f.jpg" /></a>
+					</div>
+					<div class="item">
+						<a href="#.html"><img src="images/h.jpg" /></a>
+					</div>
+					<div class="item">
+						<a href="#.html"><img src="images/s.jpg" /></a>
+					</div>
+					<div class="item">
+						<a href="#.html"><img src="images/t.jpg" /></a>
+					</div>
+					<div class="item">
+						<a href="#.html"><img src="images/v.jpg" /></a>
+					</div>
+					<div class="item">
+						<a href="#.html"><img src="images/k.jpg" /></a>
+					</div>
+				</div>
+			</div>
+			<div class="zerogrid wrap-footer">
+				<div class="row">
+					<div class="col-1-4 col-footer-1">
+						<div class="wrap-col">
+							<h3 class="widget-title">Немного о нас</h3>
+							<p>Мы являемся букмекерской конторой с богатой и честной историей, которой доверяют миллионы любителей спорта по всему миру</p>
+							<p>Все операции, осуществляемые на сайте не противоречат конституции самопровозглашенной республики Конго</p>
+						</div>
+					</div>
+					<div class="col-1-4 col-footer-2">
+						<div class="wrap-col">
+							<h3 class="widget-title">Наши Контакты</h3>
+							<ul>
+								<li><a href="https://vk.com/id114082267">Бушин Александр Сергеевич</a></li>
+								<li><a href="https://vk.com/samatovsa">Саматов Сергей Альбертович</a></li>
+								<li><a href="https://vk.com/just_jagger">Просто Петя</a></li>
+								<li><a href="#">Наш влог</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-1-4 col-footer-3">
+						<div class="wrap-col">
+							<h3 class="widget-title">Tag Cloud</h3>
+							<a href="#">Sport</a>
+							<a href="#">Debts</a>
+							<a href="#">countries</a>
+							<a href="#">city</a>
+							<a href="#">video</a>
+							<a href="#">news</a>
+							<a href="#">images</a>
+							<a href="#">media</a>
+							<a href="#">password</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright">
+				<div class="zerogrid wrapper">
+					Copyright @ Bushin - Designed by <a href="#">Bushin/Samatov/Fatkullin</a>
+					<ul class="quick-link">
+						<li><a href="#">Privacy Policy</a></li>
+						<li><a href="#">Terms of Use</a></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+	<!-- carousel -->
+	<script src="owl-carousel/owl.carousel.js"></script>
+    <script>
+    $(document).ready(function() {
+      $("#owl-brand").owlCarousel({
+        autoPlay: 3000,
+        items : 6,
+		itemsDesktop : [1199,4],
+        itemsDesktopSmall : [979,2],
+		navigation: true,
+		navigationText: ['<i class="fa fa-chevron-left fa-5x"></i>', '<i class="fa fa-chevron-right fa-5x"></i>'],
+		pagination: false
+      });
+    });
+    </script>
+</body>
+</html>

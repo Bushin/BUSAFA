@@ -2,25 +2,136 @@
     <head>
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Super Web</title>
+		<link href="css/menu.css"  type="text/css" rel="stylesheet" />
 		<link href="css/style.css" type="text/css" rel="stylesheet" />
 		<div id="cap">
 			<ul>
-				<li><a class="current" href="index.html">Home</a></li>
-				<li><a href="#">Search</a></li>
-				<li class="Count" name="username">Счет: <span><?php echo $Score; ?></span><span> руб.</span></li>
-				<li class="Name">Имя: <span><?php echo $Name_of_user; ?></span></li>
+				
+				
+				<!-- <li class="Count">Счет: <span><?php echo $Score; ?></span><span> руб.</span></li>
+				<li class="Name">Имя: <span><?php echo $Name_of_user; ?></span></li> -->
 			</ul>
 		</div>
+<script src="js/jquery183.min.js"></script>
+	<script src="js/script.js"></script>
+	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="js/popup.js"></script>	
+	<script src="js/jquery-latest.min.js"></script>
+	<script src="js/responsiveslides.min.js"></script>
+	<script type="text/javascript" src="js/news.js"></script>
+	<script type="text/javascript" src="js/effects.js"></script>
+	<script type="text/javascript" src="js/button1.js"></script>
+	<script type="text/javascript" src="js/button2.js"></script>
+	<script type="text/javascript" src="js/menu.js"></script>
+		 <script>
+		$(function () {
+		  $("#slider").responsiveSlides({
+			auto: true,
+			pager: false,
+			nav: true,
+			speed: 500,
+			namespace: "callbacks",
+			before: function () {
+			  $('.events').append("<li>before event fired.</li>");
+			},
+			after: function () {
+			  $('.events').append("<li>after event fired.</li>");
+			}
+		  });
+		});
+	</script>
 	</head>
-	<body id='main_content'>
-		<p class="thumb" style="padding-left: 20%; padding-right: 20%; padding-top: 10%;  ">
-			<a href="football.html"> <img src="images/f.jpg" alt="Фотография 1" /> </a>
-			<a href="football.html"> <img src="images/b.jpg" alt="Фотография 2" /> </a>
-			<a href="football.html"> <img src="images/h.jpg" alt="Фотография 3" /> </a>
-			<a href="football.html"> <img src="images/s.jpg" alt="Фотография 4" /> </a>
-			<a href="football.html"> <img src="images/t.jpg" alt="Фотография 5" /> </a>
-			<a href="football.html"> <img src="images/v.jpg" alt="Фотография 6" /> </a>
-		</p>
+	<body>
+		
+	<div class="wrap-body">
+		<header>
+			<div class="top-bar">
+				<div class="wrap-top zerogrid">
+					<div class="row">
+						<div class="col-2-3">
+							<ul class="list-inline">
+								<li class="mail"><span><i class="fa fa-envelope"></i> Bushin-sasha@mail.ru</span></li>
+								<li class="phone"><span><i class="fa fa-phone"></i>8-800-555-35-35</span></li>
+								<li class="clock"><span><i class="fa fa-clock-o"></i>Mon - Sat | 7:00 - 19:00</span></li>
+							</ul>
+						</div>
+						<div class="col-1-3">
+							<ul class="list-inline top-social">
+								<li><a href="https://vk.com/id114082267"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://vk.com/id114082267"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://vk.com/id114082267"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://vk.com/id114082267"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- <div class="header-logo">
+				<a href="index.html"><img src="images/header.jpg" width="2000"></a>
+			</div> -->
+			
+		
+				 
+				
+			
+			
+		</header>
+
+<div id='cssmenu' >
+				<ul>
+				   <li class="active"><a href='index.html'><span>Main Menu</span></a></li>
+				   <li class=' has-sub'><a href='#'><span>Category</span></a>
+					  <ul>
+						 <li class='has-sub'><a href='#'><span>Item 1</span></a>
+							<ul>
+							   <li><a href='#'><span>Sub Item</span></a></li>
+							   <li class='last'><a href='#'><span>Sub Item</span></a></li>
+							</ul>
+						 </li>
+						 <li class='has-sub'><a href='#'><span>Item 2</span></a>
+							<ul>
+							   <li><a href='#'><span>Sub Item</span></a></li>
+							   <li class='last'><a href='#'><span>Sub Item</span></a></li>
+							</ul>
+						 </li>
+					  </ul>
+				   </li>
+				   <li><a href='#'><span>Archive</span></a></li>
+				   <li><a id="show_popup" value="Показать всплывающее окно" href="#">About</a></li>
+				   <li class='last'><a href='#'><span>Contact</span></a></li> 
+
+
+				  <div id="UserMenu">
+				   <li ><a  id="CountMenu" class="Count">Счет: <span><?php echo $Score; ?></span><span> руб.</span></a></li>
+				   <li><a id="NameMenu" class="Name">Имя: <span><?php echo $Name_of_user; ?></span></a></li>
+				 </div>
+					<!-- <div id="Enter">
+						<input type="Panel" id="panel_enter" value="Вход" />
+						<div id="flip_enter">
+							<form method="post" action="reg.php">
+								<input type="text" name="login" placeholder=" |login" required/></br>
+								<input type="password" name="password" placeholder=" |password" required/></br>
+								<input type="submit" name="enter" id="enter_button" value="Enter"/></br>
+								<input type="Button" id="button_close2" value="Close" />
+							</form>
+					</div>		    -->
+				</ul>
+	</div>
+
+		<div   id="SelectSports">
+						<h1 style="color:#FFE401" > Виды спорта:</h1>
+					</div> 
+				<p  class="thumb" style="padding-left: 12.5%; padding-right: 20%; padding-top: 5%; ">
+					<a href="football.html"> <img src="images/football.png"  class="ImgIcon" alt="Фотография 1" />   </a>
+					 <a href="football.html"> <img src="images/Basketball.png"   class="ImgIcon" alt="Фотография 2" /></a>  
+					 <a href="football.html"> <img src="images/hocckey.png"   class="ImgIcon" alt="Фотография 3" /></a>
+					<!-- <a href="football.html"> <img src="images/s.jpg" class="ImgIcon" alt="Фотография 4" /> </a>-->
+					 <a href="football.html"> <img src="images/tennis.png" class="ImgIcon"   alt="Фотография 5" /> </a>
+					 <a href="football.html"> <img src="images/Volleyball.png" class="ImgIcon"   alt="Фотография 6" /></a> 
+				</p>
+
+		
+
 	</body>	
     
 </html>

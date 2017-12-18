@@ -117,7 +117,12 @@ h1#logo a {display: block; background: url(images/logo.png) no-repeat 0 0; width
 #popup a {
 	color: #66c3e6;
 }
-
+#SelectSports {
+	 text-align: center;
+	  margin-top: 25px;
+	  text-shadow: 2px 2px 1px #000000;
+	  color: #FF0000;
+}
 #close_popup {
 	width: 14px;
 	height: 16px;
@@ -515,71 +520,4 @@ textarea {display:block;width:100%;height:200px;background-color:#F3F3F3; color:
 .owl-carousel .owl-buttons div i {
 	font-size: 40px;
 	margin: -20px 0 0;
-}
-
-/* Оформление для страницы с футболом*/
-
-#football_cap{
-	background: url(../images/football_cap.jpg) no-repeat;
-	height: 70px;
-	margin: 0% 0% 7% 0%;
-}
-
-#football_cap ul{
-	padding-left:20px;
-	overflow:hidden;
-}
-
-#football_cap ul li{
-	float: left;
-	font: bold 18px Arial, Verdana;
-	color: #FFFFFF;
-	margin-right: 60px;
-	margin-top: 35px;
-}
-
-#football_cap ul li a{	
-	color: #FFFFFF;
-	text-decoration: none;
-}
-#football_cap ul li span{
-	color: #FFFFFF;
-}
-
-#logo_football{
-	height: 100px;
-	width: 100px;
-	float: right;
-	margin:0 0 0 0;	
-}
-
-.football_block {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-  position: relative;
-  cursor: pointer;
-  right: -28px;
-  left: 1px;
-  margin: 10px 60px 10px 60px;
-  padding: 20px 48px 20px 20px;
-  overflow: hidden;
-  border: none;
-  font: normal 16px/1 "Times New Roman", Times, serif;
-  color: rgba(255,255,255,1);
-  text-align: center;
-  background: #32CD32;
-  -webkit-box-shadow: 6px 5px 4px 0 rgba(0,0,0,0.3) ;
-  box-shadow: 6px 5px 4px 0 rgba(0,0,0,0.3) ;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2) ;
-}
-
-/* index_content*/
-
-#main_content{
-	margin-left: 20%;
-}
-.thumb{
-	position: relative;
-	margin-left: 60px;
 }

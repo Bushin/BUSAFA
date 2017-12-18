@@ -44,6 +44,23 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+#cssmenu ul div li a {
+
+  text-decoration: none;
+  display: block;
+  margin: 0;
+  -webkit-transition: color .2s ease;
+  -moz-transition: color .2s ease;
+  -ms-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: right;
+  margin-right: 25px;
+}
 #cssmenu ul li ul {
   position: absolute;
   left: -9999px;
@@ -252,6 +269,10 @@
     -o-transition: max-height 0.35s ease-out;
     transition: max-height 0.35s ease-out;
   }
+  #CountMenu
+  {
+    text-align: right;
+  }
   #cssmenu > ul > li > ul {
     width: 100%;
     display: block;
@@ -291,6 +312,14 @@
     width: 100%;
   }
   #cssmenu ul li a {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 12px 20px;
+  }
+
+  #cssmenu ul div li a {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;

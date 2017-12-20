@@ -4,25 +4,17 @@
 		<title>Super Web</title>
 		<link href="css/menu.css"  type="text/css" rel="stylesheet" />
 		<link href="css/style.css" type="text/css" rel="stylesheet" />
-		<div id="cap">
-			<ul>
-				
-				
-				<!-- <li class="Count">Счет: <span><?php echo $Score; ?></span><span> руб.</span></li>
-				<li class="Name">Имя: <span><?php echo $Name_of_user; ?></span></li> -->
-			</ul>
-		</div>
-<script src="js/jquery183.min.js"></script>
-	<script src="js/script.js"></script>
-	<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
-	<script type="text/javascript" src="js/popup.js"></script>	
-	<script src="js/jquery-latest.min.js"></script>
-	<script src="js/responsiveslides.min.js"></script>
-	<script type="text/javascript" src="js/news.js"></script>
-	<script type="text/javascript" src="js/effects.js"></script>
-	<script type="text/javascript" src="js/button1.js"></script>
-	<script type="text/javascript" src="js/button2.js"></script>
-	<script type="text/javascript" src="js/menu.js"></script>
+		<script src="js/jquery183.min.js"></script>
+		<script src="js/script.js"></script>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+		<script type="text/javascript" src="js/popup.js"></script>	
+		<script src="js/jquery-latest.min.js"></script>
+		<script src="js/responsiveslides.min.js"></script>
+		<script type="text/javascript" src="js/news.js"></script>
+		<script type="text/javascript" src="js/effects.js"></script>
+		<script type="text/javascript" src="js/button1.js"></script>
+		<script type="text/javascript" src="js/button2.js"></script>
+		<script type="text/javascript" src="js/menu.js"></script>
 		 <script>
 		$(function () {
 		  $("#slider").responsiveSlides({
@@ -105,32 +97,26 @@
 				   <li ><a  id="CountMenu" class="Count">Счет: <span><?php echo $Score; ?></span><span> руб.</span></a></li>
 				   <li><a id="NameMenu" class="Name">Имя: <span><?php echo $Name_of_user; ?></span></a></li>
 				 </div>
-					<!-- <div id="Enter">
-						<input type="Panel" id="panel_enter" value="Вход" />
-						<div id="flip_enter">
-							<form method="post" action="reg.php">
-								<input type="text" name="login" placeholder=" |login" required/></br>
-								<input type="password" name="password" placeholder=" |password" required/></br>
-								<input type="submit" name="enter" id="enter_button" value="Enter"/></br>
-								<input type="Button" id="button_close2" value="Close" />
-							</form>
-					</div>		    -->
 				</ul>
 	</div>
 
 		<div   id="SelectSports">
 						<h1 style="color:#FFE401" > Виды спорта:</h1>
 					</div> 
-				<p  class="thumb" style="padding-left: 12.5%; padding-right: 20%; padding-top: 5%; ">
-					<a href="football.html"> <img src="images/football.png"  class="ImgIcon" alt="Фотография 1" />   </a>
-					 <a href="football.html"> <img src="images/Basketball.png"   class="ImgIcon" alt="Фотография 2" /></a>  
-					 <a href="football.html"> <img src="images/hocckey.png"   class="ImgIcon" alt="Фотография 3" /></a>
-					<!-- <a href="football.html"> <img src="images/s.jpg" class="ImgIcon" alt="Фотография 4" /> </a>-->
-					 <a href="football.html"> <img src="images/tennis.png" class="ImgIcon"   alt="Фотография 5" /> </a>
-					 <a href="football.html"> <img src="images/Volleyball.png" class="ImgIcon"   alt="Фотография 6" /></a> 
-				</p>
-
-		
+						<form method="post" action="fill_information.php">
+							<!--<a> <img id="1" name = "football" src="images/f.jpg" alt="Фотография 1" onclick="foot_click"/> </a>-->
+							<!--Невидимая форма для передачи логина на 3 страницу-->
+							<input type="text" name="login" value="<?php echo $login; ?>" /></br>
+							<input type="submit" name="foot-click" id="foot_button" value="Open" /></br>
+						</form>
+					<p  class="thumb" style="padding-left: 12.5%; padding-right: 20%; padding-top: 5%; ">
+						<a href="football.html"> <img src="images/football.png"  class="ImgIcon" alt="Фотография 1" />   </a>
+						<a href="football.html"> <img src="images/Basketball.png"   class="ImgIcon" alt="Фотография 2" /></a>  
+						<a href="football.html"> <img src="images/hocckey.png"   class="ImgIcon" alt="Фотография 3" /></a>
+						<!-- <a href="football.html"> <img src="images/s.jpg" class="ImgIcon" alt="Фотография 4" /> </a>-->
+						<a href="football.html"> <img src="images/tennis.png" class="ImgIcon"   alt="Фотография 5" /> </a>
+						<a href="football.html"> <img src="images/Volleyball.png" class="ImgIcon"   alt="Фотография 6" /></a> 
+					</p>
 
 	</body>	
     

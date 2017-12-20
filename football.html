@@ -3,34 +3,123 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 		<title>Football_page</title>
 		<link href="css/style.css" type="text/css" rel="stylesheet" />
-		<div id="football_cap">
-			<ul>
-				<li><a class="current" href="index.html">Home</a></li>
-				<li class="Count">Счет: <span><?php echo $Score; ?></span><span> руб.</span></li>
-				<li class="Name">Имя: <span><?php echo $Name_of_user; ?></span></li>
-				<div id="logo_football">
-						<a href="index_content.html"><img src="images/logo.jpg" alt="Логотип"/></a>
+		<link href="css/football.css" type="text/css" rel="stylesheet" />
+		<link href="css/menu.css"  type="text/css" rel="stylesheet" />
+    </head>
+    <body>	
+	<div class="wrap-body">
+		<header>
+			<div class="top-bar">
+				<div class="wrap-top zerogrid">
+					<div class="row">
+						<div class="col-2-3">
+							<ul class="list-inline">
+								<li class="mail"><span><i class="fa fa-envelope"></i> Bushin-sasha@mail.ru</span></li>
+								<li class="phone"><span><i class="fa fa-phone"></i>8-800-555-35-35</span></li>
+								<li class="clock"><span><i class="fa fa-clock-o"></i>Mon - Sat | 7:00 - 19:00</span></li>
+							</ul>
+						</div>
+						<div class="col-1-3">
+							<ul class="list-inline top-social">
+								<li><a href="https://vk.com/id114082267"><i class="fa fa-facebook"></i></a></li>
+								<li><a href="https://vk.com/id114082267"><i class="fa fa-linkedin"></i></a></li>
+								<li><a href="https://vk.com/id114082267"><i class="fa fa-twitter"></i></a></li>
+								<li><a href="https://vk.com/id114082267"><i class="fa fa-google-plus"></i></a></li>
+							</ul>
+						</div>
+					</div>
 				</div>
-			</ul>
+			</div>				
+		</header>
+		<div id='cssmenu' >
+				<ul>
+				   <li class="active"><a href='index.html'><span>Main Menu</span></a></li>
+				   <li class=' has-sub'><a href='#'><span>Category</span></a>
+					  <ul>
+						 <li class='has-sub'><a href='#'><span>Item 1</span></a>
+							<ul>
+							   <li><a href='#'><span>Sub Item</span></a></li>
+							   <li class='last'><a href='#'><span>Sub Item</span></a></li>
+							</ul>
+						 </li>
+						 <li class='has-sub'><a href='#'><span>Item 2</span></a>
+							<ul>
+							   <li><a href='#'><span>Sub Item</span></a></li>
+							   <li class='last'><a href='#'><span>Sub Item</span></a></li>
+							</ul>
+						 </li>
+					   </ul>
+				    </li>
+				    <li><a href='#'><span>Archive</span></a></li>
+				    <li><a id="show_popup" value="Показать всплывающее окно" href="#">About</a></li>
+				    <li class='last'><a href='#'><span>Contact</span></a></li> 
+				    <div id="UserMenu">
+						<li><a  id="CountMenu" class="Count">Счет: <span><?php echo $Score; ?></span><span> руб.</span></a></li>
+						<li><a id="NameMenu" class="Name">Имя: <span><?php echo $Name_of_user; ?></span></a></li>
+					</div>
+				</ul>
 		</div>
-    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/57085624-36B8-604C-8470-4DA631B752D7/main.js" charset="UTF-8"></script></head>
-    <body background = "images/green.png">	
         <div>
+			<form method="post" action="create_bets.php">
 			<div class="football_block">
-				
-	        <div class="b-timerange active" id="bets-next">
-			<div class="b-description">Предстоящие события (<span id="dt_timezone">MSK</span>)</div>
-			<div class="b-games" style="display: block;">
-			<div class="betting b-game-block" data-id="31800"><div class="b-game"><div class="b-format"><a href="#" class="bet-tourney-pic  bet-tourney-pic-nolink tooltipstered" onclick="return false;" target="_blank"><div class="bet-tourney-title">Galaxy Battles 2 CN</div><img src="https://betsdota2.com/images/leagues/cs/eE45IMk.png"></a></div><div class="b-team1"><div class="b-score"></div><div class="b-userbet"><b class="sys-bet-user-summ cy">NaN</b><span class="sys-bet-user-earn-summ cy">+0</span><div class="bet-user-earn-return">Возврат</div><div class="b-remove" title="Отменить ставку"></div></div><div class="b-teamlogo"><img src="https://betsdota2.com/images/teams/cs/120x120/11470_5a1aef2c37458.png" class="sys-t1logo"></div><div class="b-teamname sys-t1name">Keen Gaming</div><button class="b-koef" data-side="1"><div class="b-betmoney stat-abs cy">453</div><div class="b-betextrainfo"><div class="b-betproc stat-proc">29%</div><div class="b-betcoef stat-koef">x3.19</div></div></button></div><div class="b-team2"><div class="b-score"></div><button class="b-koef" data-side="2"><div class="b-betmoney stat-abs cy">1<em></em>103</div><div class="b-betextrainfo"><div class="b-betcoef stat-koef">x1.37</div><div class="b-betproc stat-proc">71%</div></div></button><div class="b-teamname sys-t2name">iG</div><div class="b-teamlogo"><img src="https://betsdota2.com/images/teams/cs/120x120/42_5926b8058e23c.png" class="sys-t2logo"></div><div class="b-userbet"><b class="sys-bet-user-summ cy">NaN</b><span class="sys-bet-user-earn-summ cy">+0</span><div class="bet-user-earn-return">Возврат</div><div class="b-remove" title="Отменить ставку"></div></div></div><div class="b-tourney bet-time-day"><div class="bet-info"><b class="bet-time">19.12&nbsp;12:30</b><b class="bet-time-left" data-timestamp="1513675800">13ч 02м</b><b class="bet-bo">BO3</b></div><div class="bet-additional-opener">Дополнительные события</div></div><div class="b-buttons"><div class="b-tv"><div class="b-loader"></div></div><div class="b-graph" title="Статистика команд и график ставок"><div class="b-loader"></div></div><a href="/match/31800/" class="b-matchlink" title="Дополнительные события"><div class="b-loader"></div></a></div></div><!-- b-game --><!-- Дополнительные ставки --><div class="b-additionals"></div><div class="b-tv-block"></div><div class="b-graph-block"></div></div><div class="betting b-game-block  havescore" data-id="31797"><div class="b-game"><div class="b-format"><a href="#" class="bet-tourney-pic  bet-tourney-pic-nolink tooltipstered" onclick="return false;" target="_blank"><div class="bet-tourney-title">PDCup China #2</div><img src="https://betsdota2.com/images/leagues/cs/prodota-cup-pdc-small-tournament.png"></a></div><div class="b-team1"><div class="b-score"></div><div class="b-userbet"><b class="sys-bet-user-summ cy">NaN</b><span class="sys-bet-user-earn-summ cy">+0</span><div class="bet-user-earn-return">Возврат</div><div class="b-remove" title="Отменить ставку"></div></div><div class="b-teamlogo"><img src="https://betsdota2.com/images/teams/cs/120x120/91_594dc6587e2d8.png" class="sys-t1logo"></div><div class="b-teamname sys-t1name">Newbee.Y</div><button class="b-koef" data-side="1"><div class="b-betmoney stat-abs cy">421</div><div class="b-betextrainfo"><div class="b-betproc stat-proc">80%</div><div class="b-betcoef stat-koef">x1.22</div></div></button></div><div class="b-team2"><div class="b-score"></div><button class="b-koef" data-side="2"><div class="b-betmoney stat-abs cy">104</div><div class="b-betextrainfo"><div class="b-betcoef stat-koef">x4.64</div><div class="b-betproc stat-proc">20%</div></div></button><div class="b-teamname sys-t2name">LYG</div><div class="b-teamlogo"><img src="https://betsdota2.com/images/teams/cs/120x120/11194_5926ffbd1b3e2.png" class="sys-t2logo"></div><div class="b-userbet"><b class="sys-bet-user-summ cy">NaN</b><span class="sys-bet-user-earn-summ cy">+0</span><div class="bet-user-earn-return">Возврат</div><div class="b-remove" title="Отменить ставку"></div></div></div><div class="b-tourney bet-time-day"><div class="bet-info"><b class="bet-time">19.12&nbsp;12:30</b><b class="bet-time-left" data-timestamp="1513675800">13ч 02м</b><b class="bet-bo">BO1</b></div><div class="bet-additional-opener">Дополнительные события</div></div><div class="b-buttons"><div class="b-tv"><div class="b-loader"></div></div><div class="b-graph" title="Статистика команд и график ставок"><div class="b-loader"></div></div><a href="/match/31797/" class="b-matchlink" title="Дополнительные события"><div class="b-loader"></div></a></div></div><!-- b-game --><!-- Дополнительные ставки --><div class="b-additionals"></div><div class="b-tv-block"></div><div class="b-graph-block"></div></div><div class="betting b-game-block  havescore" data-id="31794"><div class="b-game"><div class="b-format"><a href="#" class="bet-tourney-pic  bet-tourney-pic-nolink tooltipstered" onclick="return false;" target="_blank"><div class="bet-tourney-title">PDCup China #2</div><img src="https://betsdota2.com/images/leagues/cs/prodota-cup-pdc-small-tournament.png"></a></div><div class="b-team1"><div class="b-score"></div><div class="b-userbet"><b class="sys-bet-user-summ cy">NaN</b><span class="sys-bet-user-earn-summ cy">+0</span><div class="bet-user-earn-return">Возврат</div><div class="b-remove" title="Отменить ставку"></div></div><div class="b-teamlogo"><img src="https://betsdota2.com/images/teams/cs/120x120/11194_5926ffbd1b3e2.png" class="sys-t1logo"></div><div class="b-teamname sys-t1name">LYG</div><button class="b-koef" data-side="1"><div class="b-betmoney stat-abs cy">268</div><div class="b-betextrainfo"><div class="b-betproc stat-proc">43%</div><div class="b-betcoef stat-koef">x2.18</div></div></button></div><div class="b-team2"><div class="b-score"></div><button class="b-koef" data-side="2"><div class="b-betmoney stat-abs cy">352</div><div class="b-betextrainfo"><div class="b-betcoef stat-koef">x1.69</div><div class="b-betproc stat-proc">57%</div></div></button><div class="b-teamname sys-t2name">Newbee.Y</div><div class="b-teamlogo"><img src="https://betsdota2.com/images/teams/cs/120x120/91_594dc6587e2d8.png" class="sys-t2logo"></div><div class="b-userbet"><b class="sys-bet-user-summ cy">NaN</b><span class="sys-bet-user-earn-summ cy">+0</span><div class="bet-user-earn-return">Возврат</div><div class="b-remove" title="Отменить ставку"></div></div></div><div class="b-tourney bet-time-day"><div class="bet-info"><b class="bet-time">19.12&nbsp;11:30</b><b class="bet-time-left" data-timestamp="1513672200">12ч 02м</b><b class="bet-bo">BO1</b></div><div class="bet-additional-opener">Дополнительные события</div></div><div class="b-buttons"><div class="b-tv"><div class="b-loader"></div></div><div class="b-graph" title="Статистика команд и график ставок"><div class="b-loader"></div></div><a href="/match/31794/" class="b-matchlink" title="Дополнительные события"><div class="b-loader"></div></a></div></div><!-- b-game --><!-- Дополнительные ставки --><div class="b-additionals"></div><div class="b-tv-block"></div><div class="b-graph-block"></div></div><div class="betting b-game-block  havescore" data-id="31769"><div class="b-game"><div class="b-format"><a href="#" class="bet-tourney-pic  bet-tourney-pic-nolink tooltipstered" onclick="return false;" target="_blank"><div class="bet-tourney-title">PDCup China #2</div><img src="https://betsdota2.com/images/leagues/cs/prodota-cup-pdc-small-tournament.png"></a></div><div class="b-team1"><div class="b-score"></div><div class="b-userbet"><b class="sys-bet-user-summ cy">NaN</b><span class="sys-bet-user-earn-summ cy">+0</span><div class="bet-user-earn-return">Возврат</div><div class="b-remove" title="Отменить ставку"></div></div><div class="b-teamlogo"><img src="https://betsdota2.com/images/teams/cs/120x120/TBD.png" class="sys-t1logo"></div><div class="b-teamname sys-t1name">Rock Gaming</div><button class="b-koef" data-side="1"><div class="b-betmoney stat-abs cy">154</div><div class="b-betextrainfo"><div class="b-betproc stat-proc">24%</div><div class="b-betcoef stat-koef">x3.88</div></div></button></div><div class="b-team2"><div class="b-score"></div><button class="b-koef" data-side="2"><div class="b-betmoney stat-abs cy">492</div><div class="b-betextrainfo"><div class="b-betcoef stat-koef">x1.28</div><div class="b-betproc stat-proc">76%</div></div></button><div class="b-teamname sys-t2name">EHOME</div><div class="b-teamlogo"><img src="https://betsdota2.com/images/teams/cs/120x120/125_592915a57894c.png" class="sys-t2logo"></div><div class="b-userbet"><b class="sys-bet-user-summ cy">NaN</b><span class="sys-bet-user-earn-summ cy">+0</span><div class="bet-user-earn-return">Возврат</div><div class="b-remove" title="Отменить ставку"></div></div></div><div class="b-tourney bet-time-day"><div class="bet-info"><b class="bet-time">19.12&nbsp;10:00</b><b class="bet-time-left" data-timestamp="1513666800">10ч 32м</b><b class="bet-bo">BO1</b></div><div class="bet-additional-opener">Дополнительные события</div></div><div class="b-buttons"><div class="b-tv"><div class="b-loader"></div></div><div class="b-graph" title="Статистика команд и график ставок"><div class="b-loader"></div></div><a href="/match/31769/" class="b-matchlink" title="Дополнительные события"><div class="b-loader"></div></a></div></div><!-- b-game --><!-- Дополнительные ставки --><div class="b-additionals"></div><div class="b-tv-block"></div><div class="b-graph-block"></div></div><div class="betting b-game-block" data-id="31770"><div class="b-game"><div class="b-format"><a href="#" class="bet-tourney-pic  bet-tourney-pic-nolink tooltipstered" onclick="return false;" target="_blank"><div class="bet-tourney-title">Galaxy Battles 2 CN</div><img src="https://betsdota2.com/images/leagues/cs/eE45IMk.png"></a></div><div class="b-team1"><div class="b-score"></div><div class="b-userbet"><b class="sys-bet-user-summ cy">NaN</b><span class="sys-bet-user-earn-summ cy">+0</span><div class="bet-user-earn-return">Возврат</div><div class="b-remove" title="Отменить ставку"></div></div><div class="b-teamlogo"><img src="https://betsdota2.com/images/teams/cs/120x120/40_592306499d17d.png" class="sys-t1logo"></div><div class="b-teamname sys-t1name">CDEC</div><button class="b-koef" data-side="1"><div class="b-betmoney stat-abs cy">2<em></em>366</div><div class="b-betextrainfo"><div class="b-betproc stat-proc">58%</div><div class="b-betcoef stat-koef">x1.64</div></div></button></div><div class="b-team2"><div class="b-score"></div><button class="b-koef" data-side="2"><div class="b-betmoney stat-abs cy">1<em></em>690</div><div class="b-betextrainfo"><div class="b-betcoef stat-koef">x2.26</div><div class="b-betproc stat-proc">42%</div></div></button><div class="b-teamname sys-t2name">Newbee.M</div><div class="b-teamlogo"><img src="https://betsdota2.com/images/teams/cs/120x120/11487_5a372ca329933.png" class="sys-t2logo"></div><div class="b-userbet"><b class="sys-bet-user-summ cy">NaN</b><span class="sys-bet-user-earn-summ cy">+0</span><div class="bet-user-earn-return">Возврат</div><div class="b-remove" title="Отменить ставку"></div></div></div><div class="b-tourney bet-time-day"><div class="bet-info"><b class="bet-time">19.12&nbsp;9:15</b><b class="bet-time-left" data-timestamp="1513664100">9ч 47м</b><b class="bet-bo">BO3</b></div><div class="bet-additional-opener">Дополнительные события</div></div><div class="b-buttons"><div class="b-tv"><div class="b-loader"></div></div><div class="b-graph" title="Статистика команд и график ставок"><div class="b-loader"></div></div><a href="/match/31770/" class="b-matchlink" title="Дополнительные события"><div class="b-loader"></div></a></div></div><!-- b-game --><!-- Дополнительные ставки --><div class="b-additionals"></div><div class="b-tv-block"></div><div class="b-graph-block"></div></div><div class="betting b-game-block  havescore" data-id="31768"><div class="b-game"><div class="b-format"><a href="#" class="bet-tourney-pic  bet-tourney-pic-nolink tooltipstered" onclick="return false;" target="_blank"><div class="bet-tourney-title">PDCup China #2</div><img src="https://betsdota2.com/images/leagues/cs/prodota-cup-pdc-small-tournament.png"></a></div><div class="b-team1"><div class="b-score"></div><div class="b-userbet"><b class="sys-bet-user-summ cy">NaN</b><span class="sys-bet-user-earn-summ cy">+0</span><div class="bet-user-earn-return">Возврат</div><div class="b-remove" title="Отменить ставку"></div></div><div class="b-teamlogo"><img src="https://betsdota2.com/images/teams/cs/120x120/125_592915a57894c.png" class="sys-t1logo"></div><div class="b-teamname sys-t1name">EHOME</div><button class="b-koef" data-side="1"><div class="b-betmoney stat-abs cy">2<em></em>924</div><div class="b-betextrainfo"><div class="b-betproc stat-proc">88%</div><div class="b-betcoef stat-koef">x1.12</div></div></button></div><div class="b-team2"><div class="b-score"></div><button class="b-koef" data-side="2"><div class="b-betmoney stat-abs cy">398</div><div class="b-betextrainfo"><div class="b-betcoef stat-koef">x7.61</div><div class="b-betproc stat-proc">12%</div></div></button><div class="b-teamname sys-t2name">Rock Gaming</div><div class="b-teamlogo"><img src="https://betsdota2.com/images/teams/cs/120x120/TBD.png" class="sys-t2logo"></div><div class="b-userbet"><b class="sys-bet-user-summ cy">NaN</b><span class="sys-bet-user-earn-summ cy">+0</span><div class="bet-user-earn-return">Возврат</div><div class="b-remove" title="Отменить ставку"></div></div></div><div class="b-tourney bet-time-day"><div class="bet-info"><b class="bet-time">19.12&nbsp;9:00</b><b class="bet-time-left" data-timestamp="1513663200">9ч 32м</b><b class="bet-bo">BO1</b></div><div class="bet-additional-opener">Дополнительные события</div></div><div class="b-buttons"><div class="b-tv"><div class="b-loader"></div></div><div class="b-graph" title="Статистика команд и график ставок"><div class="b-loader"></div></div><a href="/match/31768/" class="b-matchlink" title="Дополнительные события"><div class="b-loader"></div></a></div></div><!-- b-game --><!-- Дополнительные ставки --><div class="b-additionals"></div><div class="b-tv-block"></div><div class="b-graph-block"></div></div><div class="betting b-game-block" data-id="31760"><div class="b-game"><div class="b-format"><a href="#" class="bet-tourney-pic  bet-tourney-pic-nolink tooltipstered" onclick="return false;" target="_blank"><div class="bet-tourney-title">Galaxy Battles 2 CN</div><img src="https://betsdota2.com/images/leagues/cs/eE45IMk.png"></a></div><div class="b-team1"><div class="b-score"></div><div class="b-userbet"><b class="sys-bet-user-summ cy">NaN</b><span class="sys-bet-user-earn-summ cy">+0</span><div class="bet-user-earn-return">Возврат</div><div class="b-remove" title="Отменить ставку"></div></div><div class="b-teamlogo"><img src="https://betsdota2.com/images/teams/cs/120x120/125_592915a57894c.png" class="sys-t1logo"></div><div class="b-teamname sys-t1name">EHOME</div><button class="b-koef" data-side="1"><div class="b-betmoney stat-abs cy">30<em></em>287</div><div class="b-betextrainfo"><div class="b-betproc stat-proc">88%</div><div class="b-betcoef stat-koef">x1.12</div></div></button></div><div class="b-team2"><div class="b-score"></div><button class="b-koef" data-side="2"><div class="b-betmoney stat-abs cy">4<em></em>151</div><div class="b-betextrainfo"><div class="b-betcoef stat-koef">x7.57</div><div class="b-betproc stat-proc">12%</div></div></button><div class="b-teamname sys-t2name">IG.V</div><div class="b-teamlogo"><img src="https://betsdota2.com/images/teams/cs/120x120/219_592c98d270bde.png" class="sys-t2logo"></div><div class="b-userbet"><b class="sys-bet-user-summ cy">NaN</b><span class="sys-bet-user-earn-summ cy">+0</span><div class="bet-user-earn-return">Возврат</div><div class="b-remove" title="Отменить ставку"></div></div></div><div class="b-tourney bet-time-day"><div class="bet-info"><b class="bet-time">19.12&nbsp;6:00</b><b class="bet-time-left" data-timestamp="1513652400">6ч 32м</b><b class="bet-bo">BO3</b></div><div class="bet-additional-opener">Дополнительные события</div></div><div class="b-buttons"><div class="b-tv"><div class="b-loader"></div></div><div class="b-graph" title="Статистика команд и график ставок"><div class="b-loader"></div></div><a href="/match/31760/" class="b-matchlink" title="Дополнительные события"><div class="b-loader"></div></a></div></div><!-- b-game --><!-- Дополнительные ставки --><div class="b-additionals"></div><div class="b-tv-block"></div><div class="b-graph-block"></div></div></div>
-		</div>
-		
-		
-	</div>
-
-			<div class="football_block">Enjoy</div>  
-			<div class="football_block">Enjoy</div>  
-			<div class="football_block">Enjoy</div>  
-			<div class="football_block">Enjoy</div>  			
+				<ul>
+					<input type="checkbox" name="check1" value="c1"><Br>
+					<input type="text" name="Team1" value="<?php echo $Team1; ?>" /></br>
+					<li class="versus"><?php echo $coeff2; ?></li>
+					<li class="versus">VS</li>
+					<li class="versus"><?php echo $coeff1; ?></li>
+					<input type="text" name="Team2" value="<?php echo $Team2; ?>" /></br>
+					<input type="checkbox" name="check2" value="c2"><Br>
+				</ul>
+			</div> 
+			<div class="football_block">
+				<ul>
+					<input type="checkbox" name="check3" value="c1"><Br>
+					<input type="text" name="Team3" value="<?php echo $Team3; ?>" /></br>
+					<li class="versus"><?php echo $coeff4; ?></li>
+					<li class="versus">VS</li>
+					<li class="versus"><?php echo $coeff3; ?></li>
+					<input type="checkbox" name="check4" value="c1"><Br>
+					<input type="text" name="Team4" value="<?php echo $Team4; ?>" /></br>
+				</ul>
+			</div>  
+			<div class="football_block">
+				<ul>
+					<input type="checkbox" name="check5" value="c1"><Br>
+					<input type="text" name="Team5" value="<?php echo $Team5; ?>" /></br>
+					<li class="versus"><?php echo $coeff6; ?></li>
+					<li class="versus">VS</li>
+					<li class="versus"><?php echo $coeff5; ?></li>
+					<input type="checkbox" name="check6" value="c1"><Br>
+					<input type="text" name="Team6" value="<?php echo $Team6; ?>" /></br>
+				</ul>
+			</div>  
+			<div class="football_block">
+				<ul>
+					<input type="checkbox" name="check7" value="c1"><Br>
+					<input type="text" name="Team7" value="<?php echo $Team7; ?>" /></br>
+					<li class="versus"><?php echo $coeff8; ?></li>
+					<li class="versus">VS</li>
+					<li class="versus"><?php echo $coeff7; ?></li>
+					<input type="checkbox" name="check8" value="c1"><Br>
+					<input type="text" name="Team8" value="<?php echo $Team8; ?>" /></br>
+				</ul>
+			</div>  
+			<div class="football_block">
+				<ul>
+					<input type="checkbox" name="check9" value="c1"><Br>
+					<input type="text" name="Team9" value="<?php echo $Team9; ?>" /></br>
+					<li class="versus"><?php echo $coeff10; ?></li>
+					<li class="versus">VS</li>
+					<li class="versus"><?php echo $coeff9; ?></li>
+					<input type="checkbox" name="check10" value="c1"><Br>
+					<input type="text" name="Team10" value="<?php echo $Team10; ?>" /></br>
+				</ul>
+			</div> 
+				<input type="text" name="login" value="<?php echo $login; ?>" /></br>
+				<input type="text" name="bet" placeholder=" |ваша ставка" /></br>
+				<input type="submit" name="bets-click" id="bets_button" value="Принять ставки" /></br>
+			</form>
         </div>
     </body>
 </html>
